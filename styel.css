@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #C33764;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  color: white;
+  padding: 5px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.64);
+}
+
+
+.nav-bg {
+  background: rgb(79, 94, 167);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(79, 94, 167, 1) 0%,
+    rgba(62, 60, 142, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(79, 94, 167, 1) 0%,
+    rgba(62, 60, 142, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(79, 94, 167, 1) 0%,
+    rgba(62, 60, 142, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f5ea7",endColorstr="#3e3c8e",GradientType=1);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.outer{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    margin: 0 5px;
+    color: white;
+    background-color: black;
+}
+
+#date{
+    padding: 8px 20px;
+    border-radius: 5px;
+    outline: none;
+    border:none;
+    margin: 0 5px
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: center;
+    padding: 5px 0;
+  }
+  #para{
+    font-size: x-large;
+  }
+ 
+  .form{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:400px) {
+    #date{
+        margin: 10px 60px;
+      }
+}
+@media screen and (max-width:350px) {
+    #date{
+        margin: 10px 35px;
+      }
+}
+@media screen and (max-width:300px) {
+    #date{
+        margin: 10px 20px;
+      }
+}
+@media screen and (max-width:250px) and (min-width:200px) {
+    #date{
+        margin: 10px 10px;
+      }
+}
